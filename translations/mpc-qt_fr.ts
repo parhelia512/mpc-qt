@@ -364,12 +364,13 @@ Voulez-vous l&apos;utiliser pour &quot;%3&quot; à la place&#x202f;?</translatio
     <name>Logger</name>
     <message>
         <source>Ambiguous shortcut detected</source>
-        <translation type="unfinished"></translation>
+        <translation>Raccourci ambigu détecté</translation>
     </message>
     <message>
         <source>The key sequence &quot;%1&quot; is used for more than one command. Use the &quot;Keys&quot; page in Options to reassign it.
 No action will be triggered.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le raccourci «&#xa0;%1&#xa0;» est utilisé pour plus d&apos;une commande. Utilisez la page «&#xa0;Raccourcis&#xa0;» dans les options pour le réaffecter.
+Aucune action ne sera déclenchée.</translation>
     </message>
 </context>
 <context>
