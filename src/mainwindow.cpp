@@ -356,6 +356,11 @@ void MainWindow::setRemoveFileNotRecycle()
     ui->actionFileMoveToRecycleBin->setText(tr("Re&move File"));
 }
 
+void MainWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 void MainWindow::resizePlaylistToFit()
 {
     if (ui->actionViewMusicMode->isChecked() && !playlistWindow_->isFloating()) {

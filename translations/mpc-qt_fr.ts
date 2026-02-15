@@ -4514,7 +4514,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>Le redémarrage de l&apos;application est nécessaire pour appliquer les changements</translation>
+        <translation type="vanished">Le redémarrage de l&apos;application est nécessaire pour appliquer les changements</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>

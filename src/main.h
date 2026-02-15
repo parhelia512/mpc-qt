@@ -39,7 +39,7 @@ public:
     void init();
     int run();
     bool earlyQuit();
-    void setTranslation();
+    void setTranslation(bool updateTranslations);
     static void earlyPlatformOverride();
     static bool isNvidiaGPU();
 

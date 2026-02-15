@@ -4561,7 +4561,7 @@ media file played</source>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>மாற்றங்களைப் பயன்படுத்த விண்ணப்பத்தை மறுதொடக்கம் செய்ய வேண்டும்</translation>
+        <translation type="vanished">மாற்றங்களைப் பயன்படுத்த விண்ணப்பத்தை மறுதொடக்கம் செய்ய வேண்டும்</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>

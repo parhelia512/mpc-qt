@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
     // Spin up the application
     Flow f;
     f.parseArgs();
-    f.setTranslation();
+    f.setTranslation(false);
     f.detectMode();
     if (f.earlyQuit())
         return 0;
@@ -445,12 +445,13 @@ void Flow::earlyPlatformOverride()
 }
 
 // Register the translations
-void Flow::setTranslation()
+void Flow::setTranslation(bool updateTranslations)
 {
     if (cliNoConfig)
         return;
     QLocale locale;
-    settings = storage.readVMap(fileSettings);
+    if (settings.empty())
+        settings = storage.readVMap(fileSettings);
     bool forceEnglish = settings.value("playerLanguageForceEnglish", false).toBool();
     if (forceEnglish)
         locale = QLocale("en");
@@ -460,6 +461,18 @@ void Flow::setTranslation()
 
     if (appTranslator.load(locale, "mpc-qt", "_", ":/i18n"))
         QApplication::installTranslator(&appTranslator);
+
+    if (updateTranslations) {
+        mainWindow->updateLanguage();
+        mainWindow->playlistWindow()->updateLanguage();
+        settingsWindow->updateLanguage();
+        propertiesWindow->updateLanguage();
+        favoritesWindow->updateLanguage();
+        gotoWindow->updateLanguage();
+        logWindow->updateLanguage();
+        libraryWindow->updateLanguage();
+        thumbnailerWindow->updateLanguage();
+    }
 }
 
 void Flow::readConfig()
@@ -1576,6 +1589,7 @@ void Flow::settingswindow_settingsData(const QVariantMap &settings)
     // The selected options have changed, so write them to disk
     this->settings = settings;
     writeConfig(true);
+    setTranslation(true);
     Logger::log(logModule, "settingswindow_settingsData");
 }
 

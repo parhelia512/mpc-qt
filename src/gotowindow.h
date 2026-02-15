@@ -14,6 +14,7 @@ class GoToWindow : public QWidget
 public:
     explicit GoToWindow(QWidget *parent = nullptr);
     ~GoToWindow();
+    void updateLanguage();
 
 signals:
     void goTo(double time);

@@ -4001,10 +4001,6 @@ media file played</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Requires restarting the application to apply changes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Append opened files to Quick Playlist</source>
         <translation type="unfinished"></translation>
     </message>

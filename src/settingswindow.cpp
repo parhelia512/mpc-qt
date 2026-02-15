@@ -381,6 +381,11 @@ void SettingsWindow::setWaylandOptions(bool isWayland, bool isWaylandMode)
     ui->tweaksPreferWayland->setEnabled(isWayland);
 }
 
+void SettingsWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 void SettingsWindow::setupPageTree()
 {
     // Expand every item on pageTree

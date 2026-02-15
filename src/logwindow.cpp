@@ -29,6 +29,11 @@ LogWindow::~LogWindow()
     delete ui;
 }
 
+void LogWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 void LogWindow::appendMessage(QString message)
 {
     ui->messages->appendPlainText(message);

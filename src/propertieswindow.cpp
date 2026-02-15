@@ -35,6 +35,11 @@ PropertiesWindow::~PropertiesWindow()
     delete ui;
 }
 
+void PropertiesWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 void PropertiesWindow::setFileName(const QString &filename)
 {
     this->filename = filename;

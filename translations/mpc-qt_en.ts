@@ -4593,7 +4593,7 @@ media file played</translation>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>Requires restarting the application to apply changes</translation>
+        <translation type="vanished">Requires restarting the application to apply changes</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>

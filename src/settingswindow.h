@@ -62,6 +62,7 @@ public:
     QVariantMap settings();
     QVariantMap keyMap();
     void setWaylandOptions(bool isWayland, bool isWaylandMode);
+    void updateLanguage();
 
 private:
     void setupPageTree();

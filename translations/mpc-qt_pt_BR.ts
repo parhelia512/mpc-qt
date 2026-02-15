@@ -4300,10 +4300,6 @@ arquivo de mídia reproduzido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Requires restarting the application to apply changes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>yt-dlp (web videos)</source>
         <translation type="unfinished"></translation>
     </message>

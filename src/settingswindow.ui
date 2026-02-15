@@ -280,9 +280,6 @@
            </item>
            <item row="1" column="0">
             <widget class="QGroupBox" name="playerLanguageBox">
-             <property name="toolTip">
-              <string>Requires restarting the application to apply changes</string>
-             </property>
              <property name="title">
               <string>Language Override</string>
              </property>

@@ -4458,7 +4458,7 @@ media file played</source>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>需要重启应用程序才能应用更改</translation>
+        <translation type="vanished">需要重启应用程序才能应用更改</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>

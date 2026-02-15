@@ -22,6 +22,7 @@ class FavoritesWindow : public QWidget
 public:
     explicit FavoritesWindow(QWidget *parent = nullptr);
     ~FavoritesWindow();
+    void updateLanguage();
 
 signals:
     void favoriteTracks(QList<TrackInfo> files, QList<TrackInfo> streams);

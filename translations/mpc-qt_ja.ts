@@ -4582,7 +4582,7 @@ media file played</source>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>変更を適用するにはアプリケーションの再起動が必要です</translation>
+        <translation type="vanished">変更を適用するにはアプリケーションの再起動が必要です</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
