@@ -364,12 +364,13 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <name>Logger</name>
     <message>
         <source>Ambiguous shortcut detected</source>
-        <translation type="unfinished"></translation>
+        <translation>检测到不明确的快捷键</translation>
     </message>
     <message>
         <source>The key sequence &quot;%1&quot; is used for more than one command. Use the &quot;Keys&quot; page in Options to reassign it.
 No action will be triggered.</source>
-        <translation type="unfinished"></translation>
+        <translation>多个命令使用了组合键“%1”。请在“选项”中的“快捷键”页面重新分配该快捷键。
+不会触发任何操作。</translation>
     </message>
 </context>
 <context>
