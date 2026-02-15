@@ -4234,7 +4234,7 @@ media file played</source>
     </message>
     <message>
         <source>Locale (Autodetect)</source>
-        <translation>区域（自动检测）</translation>
+        <translation type="vanished">区域（自动检测）</translation>
     </message>
     <message>
         <source>Medium</source>
@@ -4587,6 +4587,10 @@ media file played</source>
     <message>
         <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
         <translation>图标必须使用与&lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;仓库&lt;/a&gt;中相同的名称。</translation>
+    </message>
+    <message>
+        <source>Use English for the interface</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

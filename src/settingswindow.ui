@@ -178,7 +178,7 @@
           </sizepolicy>
          </property>
          <property name="currentIndex">
-          <number>3</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="playerPage">
           <layout class="QGridLayout" name="playerPageLayout">
@@ -288,20 +288,10 @@
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_17">
               <item>
-               <widget class="QComboBox" name="playerLanguageComboBox_v2">
-                <property name="currentIndex">
-                 <number>0</number>
+               <widget class="QCheckBox" name="playerLanguageForceEnglish">
+                <property name="text">
+                 <string>Use English for the interface</string>
                 </property>
-                <item>
-                 <property name="text">
-                  <string>Locale (Autodetect)</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string notr="true" extracomment="en - English">English</string>
-                 </property>
-                </item>
                </widget>
               </item>
              </layout>

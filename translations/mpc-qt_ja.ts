@@ -4358,7 +4358,7 @@ media file played</source>
     </message>
     <message>
         <source>Locale (Autodetect)</source>
-        <translation>地域 (自動検出)</translation>
+        <translation type="vanished">地域 (自動検出)</translation>
     </message>
     <message>
         <source>Medium</source>
@@ -4711,6 +4711,10 @@ media file played</source>
     <message>
         <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
         <translation>アイコンは&lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;リポジトリ&lt;/a&gt;と同じ名前を使用する必要があります。</translation>
+    </message>
+    <message>
+        <source>Use English for the interface</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

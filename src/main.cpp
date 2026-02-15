@@ -455,8 +455,8 @@ void Flow::setTranslation(QTranslator *qtTranslator, QTranslator *appTranslator)
     QLocale locale;
     Storage s;
     QVariantMap settings = s.readVMap(fileSettings);
-    int localeSetting = settings.value("playerLanguageComboBox_v2", 0).toInt();
-    if (localeSetting != 0)
+    bool forceEnglish = settings.value("playerLanguageForceEnglish", false).toBool();
+    if (forceEnglish)
         locale = QLocale("en");
 
     if (qtTranslator->load(locale, "qtbase", "_", ":/i18n"))
