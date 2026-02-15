@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <QHash>
 #include <QMetaMethod>
+#include <QTranslator>
 #include "ipc/http.h"
 #include "ipc/json.h"
 #include "helpers.h"
@@ -38,8 +39,8 @@ public:
     void init();
     int run();
     bool earlyQuit();
+    void setTranslation();
     static void earlyPlatformOverride();
-    static void setTranslation(QTranslator *qtTranslator, QTranslator *appTranslator);
     static bool isNvidiaGPU();
 
 signals:
@@ -131,6 +132,8 @@ private:
     ThumbnailerWindow *thumbnailerWindow = nullptr;
     QThread *logThread = nullptr;
     WindowManager windowManager;
+    QTranslator qtTranslator;
+    QTranslator appTranslator;
     Storage storage;
     QVariantMap settings;
     QVariantMap keyMap;

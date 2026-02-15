@@ -11,7 +11,6 @@
 #include <QStyleFactory>
 #include <QLockFile>
 #include <QThread>
-#include <QTranslator>
 #ifdef Boost_FOUND
 #include <boost/stacktrace.hpp>
 #endif
@@ -83,11 +82,6 @@ int main(int argc, char *argv[])
     qRegisterMetaType<uint64_t>("uint64_t");
     qRegisterMetaType<uint16_t>("uint16_t");
 
-    QTranslator qtTranslator;
-    QTranslator appTranslator;
-
-    Flow::setTranslation(&qtTranslator, &appTranslator);
-
 #ifndef MPCQT_VERSION_STR
 #define MPCQT_VERSION_STR MainWindow::tr("Development Build")
 #endif
@@ -96,6 +90,7 @@ int main(int argc, char *argv[])
     // Spin up the application
     Flow f;
     f.parseArgs();
+    f.setTranslation();
     f.detectMode();
     if (f.earlyQuit())
         return 0;
@@ -450,26 +445,26 @@ void Flow::earlyPlatformOverride()
 }
 
 // Register the translations
-void Flow::setTranslation(QTranslator *qtTranslator, QTranslator *appTranslator)
+void Flow::setTranslation()
 {
+    if (cliNoConfig)
+        return;
     QLocale locale;
-    Storage s;
-    QVariantMap settings = s.readVMap(fileSettings);
+    settings = storage.readVMap(fileSettings);
     bool forceEnglish = settings.value("playerLanguageForceEnglish", false).toBool();
     if (forceEnglish)
         locale = QLocale("en");
 
-    if (qtTranslator->load(locale, "qtbase", "_", ":/i18n"))
-        QApplication::installTranslator(qtTranslator);
+    if (qtTranslator.load(locale, "qtbase", "_", ":/i18n"))
+        QApplication::installTranslator(&qtTranslator);
 
-    if (appTranslator->load(locale, "mpc-qt", "_", ":/i18n"))
-        QApplication::installTranslator(appTranslator);
+    if (appTranslator.load(locale, "mpc-qt", "_", ":/i18n"))
+        QApplication::installTranslator(&appTranslator);
 }
 
 void Flow::readConfig()
 {
     if (!cliNoConfig) {
-        settings = storage.readVMap(fileSettings);
         keyMap = storage.readVMap(fileKeys);
     }
 
