@@ -364,12 +364,13 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <name>Logger</name>
     <message>
         <source>Ambiguous shortcut detected</source>
-        <translation type="unfinished"></translation>
+        <translation>曖昧なショートカットが検出されました</translation>
     </message>
     <message>
         <source>The key sequence &quot;%1&quot; is used for more than one command. Use the &quot;Keys&quot; page in Options to reassign it.
 No action will be triggered.</source>
-        <translation type="unfinished"></translation>
+        <translation>キーシーケンス &quot;%1&quot; は複数のコマンドで使用されています。「オプション」の「キー」ページで割り当てを変更してください。
+アクションは実行されません。</translation>
     </message>
 </context>
 <context>
