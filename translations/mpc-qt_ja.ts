@@ -4715,7 +4715,7 @@ media file played</source>
     </message>
     <message>
         <source>Use English for the interface</source>
-        <translation type="unfinished"></translation>
+        <translation>インターフェースには英語を使用する</translation>
     </message>
 </context>
 <context>
