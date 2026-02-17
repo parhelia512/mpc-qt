@@ -300,6 +300,11 @@ void PlaylistWindow::updateIcons()
     themer.updateIcons();
 }
 
+void PlaylistWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 bool PlaylistWindow::eventFilter(QObject *obj, QEvent *event)
 {
     Q_UNUSED(obj)

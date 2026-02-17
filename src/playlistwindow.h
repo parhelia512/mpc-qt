@@ -48,6 +48,7 @@ public:
     void tabsFromVList(const QVariantList &qvl);
 
     void updateIcons();
+    void updateLanguage();
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event);

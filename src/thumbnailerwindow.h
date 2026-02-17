@@ -21,6 +21,7 @@ class ThumbnailerWindow : public QWidget
 public:
     explicit ThumbnailerWindow(QWidget *parent = nullptr);
     ~ThumbnailerWindow();
+    void updateLanguage();
 
 public slots:
     void open(QUrl sourceUrl);

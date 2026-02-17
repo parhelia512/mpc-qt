@@ -4291,7 +4291,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Locale (Autodetect)</source>
-        <translation>Locale (détection automatique)</translation>
+        <translation type="vanished">Locale (détection automatique)</translation>
     </message>
     <message>
         <source>Medium</source>
@@ -4515,7 +4515,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>Le redémarrage de l&apos;application est nécessaire pour appliquer les changements</translation>
+        <translation type="vanished">Le redémarrage de l&apos;application est nécessaire pour appliquer les changements</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
@@ -4644,6 +4644,10 @@ fichier média lu</translation>
     <message>
         <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
         <translation>Les icônes doivent utiliser les mêmes noms que dans le &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;dépôt&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <source>Use English for the interface</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -17,6 +17,7 @@ class PropertiesWindow : public QDialog
 public:
     explicit PropertiesWindow(QWidget *parent = nullptr);
     ~PropertiesWindow();
+    void updateLanguage();
 
 signals:
     void artistAndTitleChanged(QString artistAndTitle, QString filename);

@@ -31,6 +31,11 @@ LibraryWindow::~LibraryWindow()
     delete ui;
 }
 
+void LibraryWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 void LibraryWindow::refreshLibrary()
 {
     collectionWidget->repopulatePlaylists();

@@ -4325,7 +4325,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Locale (Autodetect)</source>
-        <translation>Yerel (kendiliğinden algıla)</translation>
+        <translation type="vanished">Yerel (kendiliğinden algıla)</translation>
     </message>
     <message>
         <source>Medium</source>
@@ -4553,7 +4553,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>Değişikliklerin uygulanması için uygulamanın yeniden başlatılmasını gerektirir</translation>
+        <translation type="vanished">Değişikliklerin uygulanması için uygulamanın yeniden başlatılmasını gerektirir</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
@@ -4681,6 +4681,10 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use English for the interface</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -48,6 +48,11 @@ ThumbnailerWindow::~ThumbnailerWindow()
     delete ui;
 }
 
+void ThumbnailerWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 void ThumbnailerWindow::setScreenshotDirectory(QString folder)
 {
     screenshotDirectory = folder;

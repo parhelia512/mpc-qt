@@ -4337,7 +4337,7 @@ media file played</source>
     </message>
     <message>
         <source>Locale (Autodetect)</source>
-        <translation>இருப்பிடம் (ஆட்டோடெடெக்ட்)</translation>
+        <translation type="vanished">இருப்பிடம் (ஆட்டோடெடெக்ட்)</translation>
     </message>
     <message>
         <source>Medium</source>
@@ -4561,7 +4561,7 @@ media file played</source>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>மாற்றங்களைப் பயன்படுத்த விண்ணப்பத்தை மறுதொடக்கம் செய்ய வேண்டும்</translation>
+        <translation type="vanished">மாற்றங்களைப் பயன்படுத்த விண்ணப்பத்தை மறுதொடக்கம் செய்ய வேண்டும்</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
@@ -4689,6 +4689,10 @@ media file played</source>
     </message>
     <message>
         <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use English for the interface</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

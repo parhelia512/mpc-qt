@@ -25,6 +25,11 @@ FavoritesWindow::~FavoritesWindow()
     delete ui;
 }
 
+void FavoritesWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 void FavoritesWindow::setFiles(const QList<TrackInfo> &tracks)
 {
     fileList->setTracks(tracks);

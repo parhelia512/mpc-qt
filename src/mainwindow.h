@@ -50,6 +50,7 @@ public:
     void fixMpvwSize();
     void setActionPlayLoopUse();
     void setRemoveFileNotRecycle();
+    void updateLanguage();
 
 protected:
     void resizeEvent(QResizeEvent *event);

@@ -20,6 +20,7 @@ class LibraryWindow : public QWidget
 public:
     explicit LibraryWindow(QWidget *parent = nullptr);
     ~LibraryWindow();
+    void updateLanguage();
 
 public slots:
     void refreshLibrary();

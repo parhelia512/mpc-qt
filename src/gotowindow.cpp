@@ -23,6 +23,11 @@ GoToWindow::~GoToWindow()
     delete ui;
 }
 
+void GoToWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 void GoToWindow::init(double currentTime, double maxTime, double fps)
 {
     maxTime_ = maxTime;

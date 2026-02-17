@@ -17,6 +17,7 @@ class LogWindow : public QWidget
 public:
     explicit LogWindow(QWidget *parent = nullptr);
     ~LogWindow();
+    void updateLanguage();
 
 signals:
     void windowClosed();
