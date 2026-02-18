@@ -4647,7 +4647,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Use English for the interface</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser l&apos;anglais pour l&apos;interface</translation>
     </message>
 </context>
 <context>
