@@ -99,7 +99,7 @@ void ScreenSaverUnix::hibernateSystem()
     if (!isInhibiting)
         return;
 
-    QDBusPendingCall async = dbusLogin.asyncCall("Hibernate");
+    QDBusPendingCall async = dbusLogin.asyncCall("Hibernate", false);
     QDBusPendingCallWatcher *watcher = new QDBusPendingCallWatcher(async, this);
 
     connect(watcher, &QDBusPendingCallWatcher::finished,
@@ -111,7 +111,7 @@ void ScreenSaverUnix::suspendSystem()
     if (!isInhibiting)
         return;
 
-    QDBusPendingCall async = dbusLogin.asyncCall("Suspend");
+    QDBusPendingCall async = dbusLogin.asyncCall("Suspend", false);
     QDBusPendingCallWatcher *watcher = new QDBusPendingCallWatcher(async, this);
 
     connect(watcher, &QDBusPendingCallWatcher::finished,
@@ -123,7 +123,7 @@ void ScreenSaverUnix::shutdownSystem()
     if (!isInhibiting)
         return;
 
-    QDBusPendingCall async = dbusLogin.asyncCall("PowerOff");
+    QDBusPendingCall async = dbusLogin.asyncCall("PowerOff", false);
     QDBusPendingCallWatcher *watcher = new QDBusPendingCallWatcher(async, this);
 
     connect(watcher, &QDBusPendingCallWatcher::finished,
