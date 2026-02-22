@@ -94,8 +94,7 @@ void WindowManager::restoreAppWindow(MainWindow *window, const CliInfo &cliInfo)
     else
         window->show();
     window->raise();
-    if (data.contains(keyState))
-        window->setState(data[keyState].toMap());
+    window->setState(data[keyState].toMap());
 }
 
 void WindowManager::restoreDocks(QMainWindow *dockHost, QList<QDockWidget *> dockWidgets)
